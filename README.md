@@ -13,6 +13,9 @@
 ---
 
 ## 環境構築
+
+**ライブラリ**
+
 以下にインストールするライブラリを示します．
 - PyTorch: pythonの機械学習用ライブラリ
 
@@ -22,10 +25,16 @@
 - vren: レンダリング用ライブラリ
 - blender: レンダリング用のソフトウェア
 
-データセットとしてShapeNet v2を使います．
+**データセット**
+
+データセットとしてShapeNetを使います．
 - https://shapenet.org/ (アカウントの登録が必要)
 
-![](docs/img/shapenet_download.png)
+- そのままだとShapeNet v1しか対応していません
+
+- ちょっと改良すればShapeNet v2にも対応できます
+
+![](docs/img/shapenet.png)
 
 **動作環境**
 - OS: Ubuntu20.04
@@ -218,7 +227,7 @@ if "reduce_scatter_tensor" not in dir(torch.distributed):
 
 - train 50枚，15エポック学習くらいで十分高品質なものができると思います．
 - ここで保存される画像は，testデータセットの各画像と対応しています．
-- ぐるぐる回転させるgifを作りたい場合はtestデータセットの画像を回転させながらレンダリングしてください．
+- ぐるぐる回転させるgifを作りたい場合は，testデータセットの画像を回転させながらレンダリングしてください．
 
 **NeRFのネットワークの拡張**
 - `models/networks.py`でネットワークのアーキテクチャを変更できます
