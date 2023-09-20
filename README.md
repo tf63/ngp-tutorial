@@ -1,14 +1,23 @@
+**base repository**
+- [instant-ngp](https://github.com/NVlabs/instant-ngp): https://arxiv.org/abs/2201.05989 の実装
+
+- [npg_pl](https://github.com/kwea123/ngp_pl): instant-ngpのPyTorch実装，実装がとてもわかりやすい
+
 ## 概要
 - [ShapeNet](https://shapenet.org/)のデータのレンダリングし，Instant NeRFの学習を行う．
 - ShapeNetだけでなく一般に`.obj`ファイルに対応．
 
 <img src="docs/img/1a6f615e8b1b5ae4dbbc9440457e303e_5epoch.gif" width=50%><img src="docs/img/1a6f615e8b1b5ae4dbbc9440457e303e_d_5epoch.gif" width=50%>
 
-**base repository**
-- [instant-ngp](https://github.com/NVlabs/instant-ngp): https://arxiv.org/abs/2201.05989 の実装
+## NeRF (デモ)
 
-- [npg_pl](https://github.com/kwea123/ngp_pl): instant-ngpのPyTorch実装，実装がとてもわかりやすい
+こういうinputがあったときに，
 
+https://github.com/tf63/ngp-tutorial/assets/74246282/738dab29-6514-46c0-a929-06017d8e1dfe
+
+こういうふうに3次元復元する
+
+https://github.com/tf63/ngp-tutorial/assets/74246282/552acbbc-5a2b-4ee9-b6cb-248966f35f15
 
 ---
 
